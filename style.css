@@ -1,10 +1,10 @@
 html, body{
     margin: 0;
     padding: 0;
+    color: white;
 }
 header{
     background-image: url(img/pizzakep.jpg);
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     height: 500px;
@@ -15,12 +15,79 @@ header{
 }
 header h1{
     margin: 0;
+    text-transform: uppercase;
 }
 nav ul li{
     text-decoration: none;
     list-style-type: none;
+    text-transform: uppercase;
 }
 nav ul{
     display: flex;
     gap: 10px;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+}
+.tortenet{
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    gap: 30px;
+}
+.cim{
+    margin: 0;
+}
+.cimek{
+    text-align: right;
+    width: 30%;
+}
+.cimek h3{
+    font-style: normal;
+}
+.szovegek{
+    width: 30%;
+}
+.szovegek p:first-child{
+    margin: 0;
+    font-weight: normal;
+    font-size: 90%;
+}
+.menu{
+    background-color: rgb(16, 16, 16);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.menu p{
+    width: 45%;
+    text-align: center;
+}
+.gombok{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    gap: 5%;
+    margin-inline: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.menu button{
+    background-color: rgb(16, 16, 16);
+    border: 2px solid white;
+    color: white;
+    padding: 15px;
+    width: 150px;
+}
+.spec{
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
