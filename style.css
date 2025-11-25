@@ -2,6 +2,7 @@ html, body{
     margin: 0;
     padding: 0;
     color: white;
+    background-color: rgb(16, 16, 16);
 }
 header{
     background-image: url(img/pizzakep.jpg);
@@ -43,6 +44,9 @@ nav ul a{
 .cimek{
     text-align: right;
     width: 30%;
+}
+.cimek h1{
+    margin: 0;
 }
 .cimek h3{
     font-style: normal;
@@ -98,11 +102,12 @@ nav ul a{
 .kepek{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2400fr 400fr 800fr 1fr;
+    grid-template-rows: 6fr 1fr 2fr;
     grid-gap: 4%;
     padding: 0.5%;
     width: 70vw;
-    height: 80vh;
+    height: 70vw;
+    margin-bottom: 30px;
 }
 .kepek div{
     width: 100%;
@@ -137,8 +142,9 @@ nav ul a{
     background-image: url(img/pizzakep4.jpg);
 }
 .kepek div:nth-child(5) {
-    grid-row: 3/5;
+    grid-row: 3 / 4;
     grid-column: 3 / 4;
+    height: calc(106%);   /* 6px-el magasabb lesz */
     background-image: url(img/pizzakep5.jpg);
 }
 .kepek div p{
@@ -152,22 +158,56 @@ footer{
     background-color: rgb(16, 16, 16);
 }
 .footer{
+    padding-top: 5px;
     display: flex;
     justify-content: center;
+    width: 80%;
+    margin-inline: auto;
+    gap: 15px;
 }
 .footer .cim{
     padding: 10px;
     width: 30%;
-}
-.footer{
-    width: 80%;
-    margin-inline: auto;
+    text-align: right;
+    margin-top: 11px;
 }
 .nyitva{
     width: 30%;
-    margin: 5px;
 }
 .probald{
     width: 30%;
-    margin: 5px;
+}
+.nyitva ul li{
+    list-style-type: none;
+    padding: 0;
+    color: rgb(221, 221, 221);
+}
+.nyitva ul{
+    padding: 0;
+}
+.probald a{
+    color: white;
+}
+.footer2{
+    width: 80%;
+    margin-inline: auto;
+    text-align: center;    
+}
+.footer2 a{
+    color: white;
+}
+hr{
+    background-color: rgb(95, 95, 95);
+    height: 1px;
+    border: none;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+p {
+font-family: 'Roboto', sans-serif;
 }
