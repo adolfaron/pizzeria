@@ -1,3 +1,37 @@
- @media (min-width: 600px) {
-    
+ @media (max-width: 720px) {
+    #menuH{
+        display: block;
+    }
+    .cimek{
+        text-align: right;
+        width: 30%;
+    }
+    .szovegek{
+        width: 70%;
+    }
+    .tortenet{
+        justify-content: space-between;
+    }
+    nav ul{
+        display: none;
+    }
+    .menu p{
+        width: 90%;
+    }
+    .gombok{
+        width: 80%;
+        gap: 5%;
+    }
+    .kepek{
+        grid-gap: 4%;
+        padding: 0.5%;
+        width: 90vw;
+        height: 90vw;
+        margin-bottom: 30px;
+        font-size: 80%;
+    }
+    .footer{
+        padding-top: 5px;
+        width: 90%;
+    }
  }
