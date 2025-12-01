@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="lg.css">
+    <link rel="stylesheet" href="md.css">
+    <link rel="stylesheet" href="mobil.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
     <title>Pizzéria</title>
 </head>
 <body>
+    <div id="atmenet"></div>
     <header>
         <h1>Pizzéria</h1>
         <nav>
             <img id="menuH" src="img/hamburger.png" onclick="nyitZar()" alt="menü">
             <ul id="nav">
-                <li><a href="#kezdolap">Kezdőlap</a></li>/
-                <li><a href="#menu">Menü</a></li>/
-                <li><a href="">Rólunk</a></li>/
-                <li><a href="">Kapcsolat</a></li>
+                <li><a href="#kezdolap">Kezdőlap</a></li><span class="per">/</span>
+                <li><a href="#menu">Menü</a></li><span class="per">/</span>
+                <li><a href="#spec">Rólunk</a></li><span class="per">/</span>
+                <li><a href="#kapcsolat">Kapcsolat</a></li>
             </ul>
         </nav>
     </header>
@@ -44,7 +46,7 @@
             <button>ITALOK</button>
         </div>
     </div>
-    <div class="spec">
+    <div class="spec" id="spec">
         <h1 class="cim">- SPECIALITÁSAINK -</h1>
         <h4 class="alcim">Az ízek tökéletes összhangja</h4>
         <div class="kepek">
@@ -56,7 +58,7 @@
         </div>
     </div>
     <footer>
-        <div class="footer">
+        <div class="footer" id ="kapcsolat">
             <div class="cim">SZERETETTEL <br>VÁRUNK</div>
             <div class="nyitva">
                 <p>NYITVA</p>

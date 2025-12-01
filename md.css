@@ -1,6 +1,9 @@
- @media (max-width: 720px) {
+ @media (max-width: 768px) {
     #menuH{
         display: block;
+    }
+    header{
+        height: 350px;
     }
     .cimek{
         text-align: right;
@@ -33,5 +36,11 @@
     .footer{
         padding-top: 5px;
         width: 90%;
+    }
+    nav ul li{
+        margin-top: 10px;
+    }
+    #nav span{
+        display: none;
     }
  }
