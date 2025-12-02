@@ -1,4 +1,7 @@
 @media (max-width: 576px) {
+    html{
+        font-size: 150%;
+    }
     .tortenet{
         flex-direction: column;
     }
@@ -9,6 +12,9 @@
     .szovegek{
         width: 100%;
     }
+    .szovegek p:first-child{
+        font-size: 120%;
+    }
     .gombok{
         flex-direction: column;
         width: 100%;
@@ -16,9 +22,58 @@
     }
     .menu button{
         margin-inline: auto;
+        width: 70%;
+        height: 80px;
     }
     .kepek{
         display: block;
         height: auto;
+    }
+    .kepek div{
+        margin-top: 5%;
+        margin-bottom: 1%;
+    }
+    .kepek div p{
+        font-size: 150%;
+        padding-bottom: 15px;
+    }
+    .kepek div:nth-child(1) {
+        height: 30vh;
+        background-image: url(img/pizzakep.jpg);
+    }
+    
+    .kepek div:nth-child(2) {
+        height: 50vh;
+        background-image: url(img/pizzakep3.jpg);
+    }
+    .kepek div:nth-child(3) {
+        height: 40vh;
+        background-image: url(img/pizzakep4.jpg);
+    }
+    .kepek div:nth-child(4) {
+        height: 85vh;
+        background-image: url(img/pizzakep2.jpg);
+    }
+    .kepek div:nth-child(5) {
+        height: 40vh;   
+        background-image: url(img/pizzakep5.jpg);
+    }
+    h1{
+        font-size: 120%;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer .cim{
+        padding: 10px;
+        width: 100%;
+        text-align: right;
+        margin-top: 11px;
+    }
+    .nyitva{
+        width: 100%;
+    }
+    .probald{
+        width: 100%;
     }
 }

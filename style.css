@@ -74,7 +74,8 @@ nav ul a{
 .szovegek p:first-child{
     margin: 0;
     font-weight: normal;
-    font-size: 90%;
+    font-size: 80%;
+    color: #b9b9b9;
 }
 .menu{
     background-color: rgb(16, 16, 16);
@@ -192,6 +193,12 @@ footer{
     text-align: right;
     margin-top: 11px;
 }
+.alcim{
+    color: #b9b9b9;
+}
+.menu p{
+    color: #b9b9b9;
+}
 .nyitva{
     width: 30%;
 }
@@ -231,6 +238,10 @@ h2 {
 }
 p {
 font-family: 'Roboto', sans-serif;
+}
+.probald p:nth-child(2){
+    font-size: 90%;
+    color: rgb(182, 182, 182);
 }
 #menuH{
     z-index: 2;
