@@ -3,6 +3,7 @@ html, body{
     padding: 0;
     color: white;
     background-color: rgb(16, 16, 16);
+    overflow-x: hidden;
 }
 header{
     background-image: url(img/pizzakep.jpg);
@@ -24,6 +25,10 @@ nav{
     flex-direction: column;
     justify-content: right;
     align-items: left;
+    transition: max-height .3s;
+}
+a:hover{
+    color: aqua;
 }
 #atmenet{
     z-index: 1;
@@ -44,7 +49,11 @@ nav ul{
     display: flex;
     gap: 10px;
 }
+nav li a:hover{
+    color:#b9b9b9
+}
 nav ul a{
+    transition: color .2s ;
     text-decoration: none;
     color: white;
 }
@@ -106,6 +115,10 @@ nav ul a{
     color: white;
     padding: 15px;
     width: 150px;
+    transition: background-color .2s;
+}
+.menu button:hover{
+    background-color: #414141;
 }
 .spec{
     background-color: rgb(34, 34, 34);
@@ -166,7 +179,7 @@ nav ul a{
 .kepek div:nth-child(5) {
     grid-row: 3 / 4;
     grid-column: 3 / 4;
-    height: calc(106%);   /* 6px-el magasabb lesz */
+    height: calc(106%);
     background-image: url(img/pizzakep5.jpg);
 }
 .kepek div p{
@@ -192,6 +205,7 @@ footer{
     width: 30%;
     text-align: right;
     margin-top: 11px;
+    font-size: 170%;
 }
 .alcim{
     color: #b9b9b9;
@@ -212,6 +226,7 @@ footer{
 }
 .nyitva ul{
     padding: 0;
+    color: #b9b9b9;
 }
 .probald a{
     color: white;
@@ -250,4 +265,7 @@ font-family: 'Roboto', sans-serif;
     height: 40px;
     margin-right: 0;
     margin-left: auto;
+}
+#tel{
+    white-space: nowrap;
 }

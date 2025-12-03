@@ -12,14 +12,16 @@ function nyitZar(){
 }
 window.addEventListener("resize", function() {
     
-    if (window.innerWidth > 720) {
+    if (window.innerWidth > 768) {
         nav.style.display = "";
     } else {
         if (nyitva) {
         nav.style.display ="block" 
+        nav.style.maxHeight="100%"
         
         }
         else {
+            nav.style.maxHeight="0px"
             nav.style.display ="none"
             
         }

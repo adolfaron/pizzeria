@@ -43,4 +43,7 @@
     #nav span{
         display: none;
     }
+    .footer .cim{
+        font-size: 100%;
+    }
  }
