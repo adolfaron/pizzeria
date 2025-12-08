@@ -25,7 +25,12 @@ nav{
     flex-direction: column;
     justify-content: right;
     align-items: left;
-    transition: max-height .3s;
+    transition: max-height .3s;  
+}
+#nav {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .8s ease-in-out;
 }
 a:hover{
     color: aqua;
