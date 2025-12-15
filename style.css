@@ -29,7 +29,7 @@ nav{
 }
 #nav {
     overflow: hidden;
-    max-height: 0;
+    max-height: 200px;
     transition: max-height .8s ease-in-out;
 }
 a:hover{
@@ -239,7 +239,8 @@ footer{
 .footer2{
     width: 80%;
     margin-inline: auto;
-    text-align: center;    
+    text-align: center;
+    font-size: 70%;
 }
 .footer2 a{
     color: white;
