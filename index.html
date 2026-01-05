@@ -8,103 +8,107 @@
     <link rel="stylesheet" href="mobil.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <title>Pizzéria</title>
 </head>
-<body>
-    <div id="atmenet"></div>
-    <header>
-        <h1>Pizzéria</h1>
-        <nav>
-            <img id="menuH" src="img/hamburger.png" onclick="nyitZar()" alt="menü">
-            <ul id="nav">
-                <li><a href="#kezdolap">Kezdőlap</a></li><span class="per">/</span>
-                <li><a href="#menu">Menü</a></li><span class="per">/</span>
-                <li><a href="#spec">Rólunk</a></li><span class="per">/</span>
-                <li><a href="#kapcsolat">Kapcsolat</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="tortenet" id="kezdolap">
-        <div class="cimek">
-            <h1>PIADINA PIZZÉRIA</h1>
-            <h3>Történetünk</h3>
-        </div>
-        <div class="szovegek">
-            <p>Itt kezdődhet a szöveged. Kattints ide, és kezdheted is az írást. Illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia non numquam eius modi.</p>
-            <p>FOGLALJ <span id="tel">ASZTALT: +36-67-632-456</span></p>
-        </div>
-        
-
-    </div>
-    <div class="menu" id="menu">
-        <h1 class="cim">- MENÜ -</h1>
-        <h4 class="alcim">Ajánlatunk</h4>
-        <p>Itt kezdődhet a szöveged. Kattints ide, és kezdheted is az írást. Veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
-        <div class="gombok">
-            <button>PIZZA</button>
-            <button>MENÜ</button>
-            <button>ITALOK</button>
-        </div>
-    </div>
-    <div class="spec" id="spec">
-        <h1 class="cim">- SPECIALITÁSAINK -</h1>
-        <h4 class="alcim">Az ízek tökéletes összhangja</h4>
-        <div class="kepek">
-            <div class="kep1"><p>Pizza</p></div>
-            <div class="kep2"><p>Vörösboros marhapecsenye</p></div>
-            <div class="kep3"><p>Vegyes zöldségsaláta olívával</p></div>
-            <div class="kep4"><p>Pizza</p></div>
-            <div class="kep5"><p>Előétel</p></div>
-        </div>
-    </div>
-    <footer>
-        <div class="footer" id ="kapcsolat">
-            <div class="cim">SZERETETTEL VÁRUNK</div>
-            <div class="nyitva">
-                <p>NYITVA</p>
-                <ul>
-                    <li>Hétfő:</li>
-                    <li>zárva</li>
-                    <hr>
-                    <li>Kedd:</li>
-                    <li>09:30-20:00</li>
-                    <hr>
-                    <li>Szerda:</li>
-                    <li>09:30-20:00</li>
-                    <hr>
-                    <li>Csütörtök:</li>
-                    <li>11:00- 22:00</li>
-                    <hr>
-                    <li>Péntek:</li>
-                    <li>11:00- 22:00</li>
-                    <hr>
-                    <li>Szo:</li>
-                    <li>11:00-22:00</li>
-                    <hr>
-                    <li>Vas:</li>
-                    <li>11:00-20:00 </li>
+<body>     
+    <main>
+        <div id="atmenet"></div>
+        <header>
+            <h1>Pizzéria</h1>
+            <nav>
+                <img id="menuH" src="img/hamburger.png" onclick="nyitZar()" alt="menü">
+                <ul id="nav">
+                    <li><a href="#kezdolap">Kezdőlap</a></li><span class="per">/</span>
+                    <li><a href="#menu">Menü</a></li><span class="per">/</span>
+                    <li><a href="#spec">Rólunk</a></li><span class="per">/</span>
+                    <li><a href="#kapcsolat">Kapcsolat</a></li>
                 </ul>
+            </nav>
+        </header>
+        <div class="tortenet" id="kezdolap">
+            <div class="cimek">
+                <h1>PIADINA PIZZÉRIA</h1>
+                <h3>Történetünk</h3>
             </div>
-            <div class="probald">
-                <p>PRÓBÁLD KI FENSÉGES ÉTELEINK</p>
-                <p>Kattints ide, és kezdheted is az
-                    írást. Quis autem vel eum iure
-                    reprehenderit qui in ea voluptate
-                    velit</p>
-                <a href="#">Foglalj asztalt itt</a>
+            <div class="szovegek">
+                <p>Itt kezdődhet a szöveged. Kattints ide, és kezdheted is az írást. Illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia non numquam eius modi.</p>
+                <p>FOGLALJ <span id="tel">ASZTALT: +36-67-632-456</span></p>
+            </div>
+            
+
+        </div>
+        <div class="menu" id="menu">
+            <h1 class="cim">- MENÜ -</h1>
+            <h4 class="alcim">Ajánlatunk</h4>
+            <p>Itt kezdődhet a szöveged. Kattints ide, és kezdheted is az írást. Veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+            <div class="gombok">
+                <button>PIZZA</button>
+                <button>MENÜ</button>
+                <button>ITALOK</button>
             </div>
         </div>
-        <div class="footer2">
-            <hr>
-            <p>
-                Piadina Pizzéria, 1013 Budapest, Clark Ádám tér 1., +36-67-632-456
-            </p>
-            <p>
-                Az oldalt a <a href="#">Webnode</a> működteti
-            </p>
+        <div class="spec" id="spec">
+            <h1 class="cim">- SPECIALITÁSAINK -</h1>
+            <h4 class="alcim">Az ízek tökéletes összhangja</h4>
+            <div class="kepek">
+                <div class="kep1"><p>Pizza</p></div>
+                <div class="kep2"><p>Vörösboros marhapecsenye</p></div>
+                <div class="kep3"><p>Vegyes zöldségsaláta olívával</p></div>
+                <div class="kep4"><p>Pizza</p></div>
+                <div class="kep5"><p>Előétel</p></div>
+            </div>
         </div>
-        
-    </footer>
+        <footer>
+            <div class="footer" id ="kapcsolat">
+                <div class="cim">SZERETETTEL VÁRUNK</div>
+                <div class="nyitva">
+                    <p>NYITVA</p>
+                    <ul>
+                        <li>Hétfő:</li>
+                        <li>zárva</li>
+                        <hr>
+                        <li>Kedd:</li>
+                        <li>09:30-20:00</li>
+                        <hr>
+                        <li>Szerda:</li>
+                        <li>09:30-20:00</li>
+                        <hr>
+                        <li>Csütörtök:</li>
+                        <li>11:00- 22:00</li>
+                        <hr>
+                        <li>Péntek:</li>
+                        <li>11:00- 22:00</li>
+                        <hr>
+                        <li>Szo:</li>
+                        <li>11:00-22:00</li>
+                        <hr>
+                        <li>Vas:</li>
+                        <li>11:00-20:00 </li>
+                    </ul>
+                </div>
+                <div class="probald">
+                    <p>PRÓBÁLD KI FENSÉGES ÉTELEINK</p>
+                    <p>Kattints ide, és kezdheted is az
+                        írást. Quis autem vel eum iure
+                        reprehenderit qui in ea voluptate
+                        velit</p>
+                    <a href="#">Foglalj asztalt itt</a>
+                </div>
+            </div>
+            <div class="footer2">
+                <hr>
+                <p>
+                    Piadina Pizzéria, 1013 Budapest, Clark Ádám tér 1., +36-67-632-456
+                </p>
+                <p>
+                    Az oldalt a <a href="#">Webnode</a> működteti
+                </p>
+            </div>
+            
+        </footer>
+    </main>
     <script src="nav.js"></script>
 </body>
 </html>

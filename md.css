@@ -1,6 +1,7 @@
  @media (max-width: 768px) {
     #menuH{
         display: block;
+        z-index: 3;
     }
     header{
         height: 350px;
@@ -34,8 +35,18 @@
         padding-top: 5px;
         width: 90%;
     }
+    nav ul{
+        background-color: rgba(0, 0, 0, 0.486);
+    }
     nav ul li{
         margin-top: 10px;
+        margin-right: 10px;
+    }
+    nav ul li:last-child{
+        margin-bottom: 10px;
+    }
+    nav ul li:last-child{
+        margin-bottom: 10px;
     }
     #nav span{
         display: none;
