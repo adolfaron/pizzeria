@@ -37,10 +37,11 @@
     }
     nav ul{
         background-color: rgba(0, 0, 0, 0.486);
+        border-radius: 15px;
     }
     nav ul li{
         margin-top: 10px;
-        margin-right: 10px;
+        margin-right: 20px;
     }
     nav ul li:last-child{
         margin-bottom: 10px;
